@@ -169,7 +169,7 @@ public class Server implements ChunkReadyListener {
     }
 
     private void send(NetData.NetMessage data) {
-        logger.trace("Sending with size {} ", data.getSerializedSize());
+        logger.trace("Sending with size {}", data.getSerializedSize());
         channel.write(data);
     }
 
